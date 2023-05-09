@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image";
 import { useState } from 'react'
 
 const Navbar = () => {
@@ -11,12 +12,9 @@ const Navbar = () => {
     return (
         <div className='shadow-md w-full fixed top-0 left-0 font-[Poppins]'>
         <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
-        <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
+        <div className='font-bold text-2xl w-[80px] cursor-pointer flex items-center font-[Poppins] 
         text-gray-800'>
-          <span className='text-3xl text-indigo-600 mr-1 pt-2'>
-          <ion-icon name="logo-ionic"></ion-icon>
-          </span>
-          Transnet
+          <Image src="/img/LOGOHELP.png" width={400} height={0} />
         </div>
         
         <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
